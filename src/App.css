@@ -1,38 +1,104 @@
 .App {
-  text-align: center;
+  height: 100vh;
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6) ), url('./images/train5.jpg');
+  background-size: cover;
+  background-position: center;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainContainer{
+  /* background-color: aqua; */
+  padding: 4rem 7rem 4rem 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.seatscontainer{
+  background-color: rgb(255, 245, 230);
+  border-radius: 20px;
+  width: 30%;
+  padding: 5rem 1rem 1rem 1rem;
+  position: relative;
+}
+.example{
+  display: flex;
+  margin: 1rem;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translate(-60%, -50%)
+}
+.rowContainer{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.seatGroup_of_4{
+  display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.seatGroup_of_3{
+  display: flex;
+}
+
+.seat{
+  /* padding: 0rem 1rem 0rem 1rem; */
+  margin: 0rem 0.3rem 0rem 0.3rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  /* width: 2rem; */
+  height: 2rem;
+  border: 2px solid green;
+  box-shadow: inset 0 0 10px 5px rgba(63, 114, 51, 0.4);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.sold {
+  margin: 0rem 0.3rem 0rem 0.3rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #c7c5c5c4;
+
+  border: 2px solid rgb(8, 255, 210);
+  background-color: #c7c5c5c4;
+  border-radius: 3px;
+  cursor: not-allowed;
+}
+
+.exampleDivItem{
+  display: flex;
+  align-items: center;
+}
+
+.inputDetailsContainer{
+  padding: 1rem;
+  width: 40%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+  height: 35vh;
+}
+.btn{
+  width: 100%;
+}
+.headingOfInput{
+  padding-bottom: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#exampleInputEmail1{
+  height: 3rem;
 }
